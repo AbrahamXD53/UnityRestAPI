@@ -33,7 +33,7 @@ public class Leaderboards : MonoBehaviour
             {
                 Destroy(buttons[i].gameObject);
             }
-            lastUpdateText.text = string.Format("{0} usuarios, ultima actualización: {1}", response["data"].Count, response["time"].str);
+            lastUpdateText.text = string.Format("{0} users, last update: {1}", response["data"].Count, response["time"].str);
             buttons = new List<GameObject>();
             for (int i = 0; i < response["data"].Count; i++)
             {
